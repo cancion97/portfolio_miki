@@ -1,29 +1,7 @@
-const navList = [
-  {
-    list: "Menu1",
-    ListClass: "list01",
-    key: 1,
-  },
-  {
-    list: "Menu2",
-    ListClass: "list02",
-    key: 2,
-  },
-  {
-    list: "Menu3",
-    ListClass: "list01",
-    key: 3,
-  },
-  {
-    list: "Menu4",
-    ListClass: "list02",
-    key: 4,
-  },
-  {
-    list: "Menu5",
-    ListClass: "list01",
-    key: 5,
-  },
+const navItems = [
+  { id: 1, label: "WORKS", path: "" },
+  { id: 2, label: "PROFILE", path: "" },
+  { id: 3, label: "CONTACT", path: "" },
 ];
 
-export default navList;
+export default navItems;

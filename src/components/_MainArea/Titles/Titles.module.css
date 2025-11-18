@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Neonderthaw&family=Noto+Sans+JP:wght@100..900&display=swap");
+
+.titlebox {
+  text-align: center;
+  position: relative;
+
+  h2 {
+    font-size: 160px;
+    color: rgba(0, 0, 0, 0.05);
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+  }
+
+  p {
+    position: absolute;
+    font-size: 2rem;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

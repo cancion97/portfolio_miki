@@ -1,26 +1,13 @@
 import "./App.css";
-
-import navList from "./components/NavigationList";
-import Header from "./components/Header";
-
-import Logo from "./components/Logo";
-import MainWrap from "./components/MainWrap";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
+import Header from "./components/_Header/Header/Header";
+import Navigation from "./components/_Header/Navigation/Navigation";
+import MainArea from "./components/_MainArea/MainArea/MainArea";
 
 function App() {
   return (
     <>
-      <Header>
-        <Logo />
-        <Navigation src={navList} />
-      </Header>
-
-      <MainWrap />
-
-      <Footer>
-        <small>copyright 202510</small>
-      </Footer>
+      <Header />
+      <MainArea />
     </>
   );
 }
