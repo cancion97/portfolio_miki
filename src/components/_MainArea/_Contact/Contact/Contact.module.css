@@ -1,7 +1,8 @@
 .wrap {
   background: linear-gradient(70deg, #e0faf9, #fcf4fa);
   position: relative;
-  height: 500px;
+  margin-block-start: 4rem;
+  padding-block: 5rem;
 }
 
 .title {
@@ -12,7 +13,7 @@
   position: relative;
   z-index: 2;
   font-size: 160px;
-  color: rgba(0, 0, 0, 0.05);
+  color: rgb(142, 142, 142);
   font-family: "Fredoka", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -22,10 +23,15 @@
 
 .title p {
   position: absolute;
+  mix-blend-mode: color-burn;
+  color: #004377;
   z-index: 3;
   font-size: 2rem;
   font-family: "Fredoka", sans-serif;
   font-weight: 600;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .button {
@@ -39,7 +45,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  transition: 0.2s;
+  transition: 0.3s;
   background-color: white;
   cursor: pointer;
   color: #0067cd;
@@ -50,6 +56,6 @@
     width: 25px;
   }
   &:hover {
-    background-color: rgb(231, 255, 255);
+    scale: 1.05;
   }
 }
