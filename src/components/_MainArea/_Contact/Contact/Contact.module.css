@@ -1,0 +1,55 @@
+.wrap {
+  background: linear-gradient(70deg, #e0faf9, #fcf4fa);
+  position: relative;
+  height: 500px;
+}
+
+.title {
+  position: relative;
+}
+
+.title h2 {
+  position: relative;
+  z-index: 2;
+  font-size: 160px;
+  color: rgba(0, 0, 0, 0.05);
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  mix-blend-mode: color-burn;
+  text-align: center;
+}
+
+.title p {
+  position: absolute;
+  z-index: 3;
+  font-size: 2rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+}
+
+.button {
+  width: fit-content;
+  margin-inline: auto;
+  border: 1px solid #7cb6c8;
+  padding: 24px 64px;
+  border-radius: 4rem;
+  font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s;
+  background-color: white;
+  cursor: pointer;
+  color: #0067cd;
+  text-decoration: none;
+  font-weight: normal;
+  letter-spacing: 20;
+  img {
+    width: 25px;
+  }
+  &:hover {
+    background-color: rgb(231, 255, 255);
+  }
+}

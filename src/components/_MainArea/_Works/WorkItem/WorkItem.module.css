@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Neonderthaw&family=Noto+Sans+JP:wght@100..900&display=swap");
+
+.wbox {
+  font-family: "Noto Sans JP", sans-serif;
+  margin-block: 2rem;
+  position: relative;
+}
+
+.box {
+  background-image: url(./textbg.png);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin-block-end: 5rem;
+}
+
+.titlewrap {
+  display: flex;
+  gap: 3rem;
+  margin-block-start: 5rem;
+  margin-inline: 1.5rem;
+  align-items: center;
+
+  h3 {
+    border-bottom: 1px solid #333;
+    padding: 1rem;
+    font-size: 24px;
+  }
+
+  img {
+    height: 40px;
+    margin-inline: 0.5rem;
+  }
+}
+
+.text {
+  margin: 2rem;
+  max-width: 500px;
+  padding: 1rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.btnbox {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-inline-end: 8rem;
+  padding-block-end: 500px;
+}
+
+.img {
+  pointer-events: none;
+  max-width: 740px;
+  position: absolute;
+  z-index: 10;
+  right: 16px;
+  bottom: -10px;
+}

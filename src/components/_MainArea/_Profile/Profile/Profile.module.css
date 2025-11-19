@@ -1,0 +1,29 @@
+.profileWrap {
+  margin-block-start: 2rem;
+  display: flex;
+  background-color: #f7f9fa;
+  border: 1px #333 solid;
+  border-radius: 1rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin-inline: auto;
+  @media (width<790px) {
+    flex-direction: column;
+  }
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.toolIcon {
+  height: 47px;
+  margin-inline-end: 1.5rem;
+  margin-block-end: 1.5rem;
+}

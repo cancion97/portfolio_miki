@@ -1,0 +1,8 @@
+.image {
+  width: 100%;
+}
+
+.imgbox {
+  flex-basis: 45%;
+  min-width: 300px;
+}
