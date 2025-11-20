@@ -2,30 +2,51 @@
 
 .wbox {
   font-family: "Noto Sans JP", sans-serif;
-  margin-block: 2rem;
+  margin-block-start: 2rem;
   position: relative;
+  margin-block-end: 6rem;
 }
 
 .box {
-  background-image: url(https://raw.githubusercontent.com/cancion97/portfolio_miki/main/public/textbg.png);
-  background-size: contain;
+  background-repeat: repeat;
+  background-color: #f9f6f2;
+  opacity: 1;
+  background-image: linear-gradient(#ffe7f4 1.1px, transparent 1.1px),
+    linear-gradient(to right, #ffe7f4 1.1px, #f9f6f2 1.1px);
+  background-size: 22px 22px;
+  /* background-image: url(https://raw.githubusercontent.com/cancion97/portfolio_miki/main/public/textbg.png); */
+
   display: flex;
   flex-direction: column;
   max-width: 1000px;
-  margin-block-end: 5rem;
+
+  box-shadow: 4px 4px 7px #d0d0d0;
+  margin-block-end: 1rem;
+  @media (width < 1200px) {
+    margin-block-end: 1rem;
+  }
 }
 
 .titlewrap {
   display: flex;
   gap: 3rem;
-  margin-block-start: 5rem;
+  margin-block-start: 2rem;
   margin-inline: 1.5rem;
   align-items: center;
-
+  @media (width < 750px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
   h3 {
     border-bottom: 1px solid #333;
+    width: 100%;
     padding: 1rem;
     font-size: 24px;
+    @media (width < 750px) {
+      padding: 0.5rem;
+      font-size: 20px;
+    }
   }
 
   img {
@@ -47,14 +68,60 @@
   gap: 1rem;
   justify-content: flex-end;
   margin-inline-end: 8rem;
-  padding-block-end: 500px;
+  padding-block-end: 2rem;
+
+  @media (width < 1200px) {
+    margin-inline-end: 2rem;
+  }
+
+  @media (width < 500px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.imgbox {
+  width: 100%;
+}
+
+.scshots {
+  position: relative;
+  @media (width < 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
 }
 
 .img {
   pointer-events: none;
   max-width: 740px;
-  position: absolute;
+  position: relative;
   z-index: 10;
+  right: -500px;
+  bottom: 0px;
+  @media (width < 1200px) {
+    right: 0;
+    bottom: 0;
+    flex-basis: 60%;
+  }
+  @media (width < 960px) {
+    width: 350px;
+  }
+}
+
+.imgs {
+  max-width: 200px;
+  height: auto;
+  position: absolute;
   right: 16px;
-  bottom: -10px;
+  z-index: 15;
+  bottom: 400px;
+  @media (width < 1200px) {
+    position: static;
+    flex-basis: 40%;
+  }
+  @media (width < 960px) {
+    display: none;
+  }
 }

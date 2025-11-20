@@ -5,13 +5,16 @@ import Titles from "../Titles/Titles";
 import Works from "../_Works/Works/Works";
 import Profile from "../_Profile/Profile/Profile";
 import Contact from "../_Contact/Contact/Contact";
+import styles from "./MainArea.module.css";
 
 export default function () {
   return (
     <>
       <main>
-        <Works />
-        <Profile />
+        <div className={styles.mainwrap}>
+          <Works />
+          <Profile />
+        </div>
         <Contact />
       </main>
     </>

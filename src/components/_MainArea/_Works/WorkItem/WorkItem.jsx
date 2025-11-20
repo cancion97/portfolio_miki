@@ -12,7 +12,7 @@ export default function WorkItem() {
           <div className={styles.box}>
             <div className={styles.titlewrap}>
               <h3>{item.label}</h3>
-              <div>
+              <div className={styles.imgbox}>
                 {item.tool.map((icon, index) => (
                   <img
                     key={index}
@@ -31,7 +31,18 @@ export default function WorkItem() {
               <Button btext="詳しく見る" icon={arrow} />
             </div>
           </div>
-          <img className={styles.img} src={item.src} alt="スクリーンショット" />
+          <div className={styles.scshots}>
+            <img
+              className={styles.img}
+              src={item.src}
+              alt="スクリーンショット"
+            />
+            <img
+              className={styles.imgs}
+              src={item.srcs}
+              alt="スクリーンショット"
+            />
+          </div>
         </div>
       ))}
     </>

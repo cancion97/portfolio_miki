@@ -1,6 +1,9 @@
-import LP from "./../assets/LP.png";
-import poke from "./../assets/poke.png";
-import blog from "./../assets/blog.png";
+import LPpc from "./../assets/LPpc.png";
+import LPsp from "./../assets/LPsp.png";
+import pokepc from "./../assets/pokepc.png";
+import pokesp from "./../assets/poketb.png";
+import blogpc from "./../assets/blogpc.png";
+import blogsp from "./../assets/blogsp.png";
 import skills from "./skills";
 
 const icon = (name) => skills.find((s) => s.label === name)?.src;
@@ -10,7 +13,8 @@ const works = [
     label: "架空のクラフトビールLP",
     text: "兵庫、神戸のクラフトビールの架空LP。figmaでデザインを作成して、HTML、Sass、JavaScriptで作成。ファイル管理はGitHubで行いました。",
     url: "https://cancion97.github.io/2025_10_fictional_LP/",
-    src: LP,
+    src: LPpc,
+    srcs: LPsp,
     tool: [
       icon("HTML"),
       icon("sass"),
@@ -24,7 +28,8 @@ const works = [
     label: "今日のラッキーポケモンアプリ",
     text: "POKE APIを使った今日のラッキーポケモンを占うWEBアプリ。figmaでデザインを作成して、HTML、Sass、JavaScriptで作成。ファイル管理はGitHubで行いました。",
     url: "https://cancion97.github.io/pokeapi_luckypokemon/",
-    src: poke,
+    src: pokepc,
+    srcs: pokesp,
     tool: [
       icon("HTML"),
       icon("sass"),
@@ -38,7 +43,8 @@ const works = [
     label: "Reactで作ったブログサイト",
     text: "授業で作ったブログサイトです。Figmaで作られたデザインをもとに、Reactを使って作成しました。ファイル管理はGithubで行いました。",
     url: "https://cancion97.github.io/reactBlogSite/",
-    src: blog,
+    src: blogpc,
+    srcs: blogsp,
     tool: [
       icon("HTML"),
       icon("css"),

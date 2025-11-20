@@ -1,0 +1,16 @@
+.headerwrap {
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 10rem;
+  padding: 2rem;
+  @media (width < 750px) {
+    padding: 1rem;
+  }
+}
+
+.box {
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+}

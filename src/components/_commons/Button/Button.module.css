@@ -19,6 +19,6 @@
     width: 25px;
   }
   &:hover {
-    background-color: rgb(231, 255, 255);
+    background-color: rgb(230, 233, 233);
   }
 }

@@ -19,6 +19,9 @@
   font-weight: 600;
   mix-blend-mode: color-burn;
   text-align: center;
+  @media (width < 750px) {
+    font-size: 80px;
+  }
 }
 
 .title p {
