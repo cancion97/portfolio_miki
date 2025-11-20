@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <>
       <div className={styles.wrap}>
-        <Titles id={3} style={styles.title} />
+        <Titles id={3} style={styles.title} idname="contact" />
         <ContactImage />
         <ContactText />
         <Button

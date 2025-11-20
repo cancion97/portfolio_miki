@@ -7,7 +7,7 @@ import styles from "./Profile.module.css";
 export default function Profile() {
   return (
     <>
-      <Titles id={2} />
+      <Titles id={2} idname="profile" />
 
       <div className={styles.wrapper}>
         <div className={styles.profileWrap}>

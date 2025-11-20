@@ -6,7 +6,7 @@ import WorkItem from "../WorkItem/WorkItem";
 export default function Works() {
   return (
     <>
-      <Titles id={1} />
+      <Titles id={1} idname="works" />
       <WorkItem />
     </>
   );

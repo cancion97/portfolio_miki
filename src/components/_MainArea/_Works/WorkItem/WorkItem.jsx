@@ -3,6 +3,7 @@ import works from "../../../worksList";
 import link from "../../../../assets/link.png";
 import arrow from "../../../../assets/arrow.png";
 import styles from "./WorkItem.module.css";
+import clip from "../../../../assets/clip.png";
 
 export default function WorkItem() {
   return (
@@ -10,6 +11,9 @@ export default function WorkItem() {
       {works.map((item) => (
         <div key={item.label} className={styles.wbox}>
           <div className={styles.box}>
+            <div className={styles.clip}>
+              <img src={clip} alt="クリップの写真" />
+            </div>
             <div className={styles.titlewrap}>
               <h3>{item.label}</h3>
               <div className={styles.imgbox}>
