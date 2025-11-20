@@ -7,7 +7,7 @@
 }
 
 .box {
-  background-image: url(./textbg.png);
+  background-image: url(https://raw.githubusercontent.com/cancion97/portfolio_miki/main/public/textbg.png);
   background-size: contain;
   display: flex;
   flex-direction: column;
