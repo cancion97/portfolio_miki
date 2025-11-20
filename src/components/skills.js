@@ -1,4 +1,4 @@
-import html from "./../assets/html.png";
+import html from "./../assets/HTML.png";
 import css from "./../assets/css.png";
 import sass from "./../assets/sass.png";
 import js from "./../assets/js.png";
