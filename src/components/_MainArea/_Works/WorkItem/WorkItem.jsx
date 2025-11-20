@@ -4,8 +4,20 @@ import link from "../../../../assets/link.png";
 import arrow from "../../../../assets/arrow.png";
 import styles from "./WorkItem.module.css";
 import clip from "../../../../assets/clip.png";
+import close from "../../../../assets/close.png";
+import { useState } from "react";
+import Construction from "../../../Construction/Construction";
 
 export default function WorkItem() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
   return (
     <>
       {works.map((item) => (
@@ -32,8 +44,26 @@ export default function WorkItem() {
             </p>
             <div className={styles.btnbox}>
               <Button btext="サイトにアクセス" icon={link} href={item.url} />
-              <Button btext="詳しく見る" icon={arrow} />
+              <Button btext="詳しく見る" icon={arrow} onclick={openModal} />
             </div>
+          </div>
+          <div className="modalWrapper">
+            {isOpen && (
+              // modalOverlayはモーダルが出た時の背景
+              <div className={styles.modalOverlay} onClick={closeModal}>
+                {/* モーダルの表示される画面 */}
+                <div
+                  className={styles.modalContent}
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* モーダルとして表示したい内容 */}
+                  <div className={styles.modal}>
+                    <Construction />
+                    <Button btext="閉じる" icon={close} onclick={closeModal} />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
           <div className={styles.scshots}>
             <img

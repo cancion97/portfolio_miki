@@ -11,10 +11,16 @@
     list-style: none;
     padding: 0.2rem;
     border-bottom: #333 solid 1px;
+    &:hover {
+      border-bottom: #858585 solid 1px;
+    }
   }
   a {
     text-decoration: none;
     color: #333;
+    &:hover {
+      color: #797979;
+    }
   }
   @media (width < 750px) {
     gap: 1rem;
