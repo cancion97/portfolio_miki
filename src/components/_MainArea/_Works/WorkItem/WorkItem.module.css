@@ -72,6 +72,9 @@
     font-weight: 600;
     line-height: 1.7rem;
   }
+  @media (width < 500px) {
+    font-size: 15px;
+  }
 }
 .blockSpan {
   display: block;

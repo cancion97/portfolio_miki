@@ -11,8 +11,12 @@
     list-style: none;
     padding: 0.2rem;
     border-bottom: #333 solid 1px;
+    letter-spacing: 1px;
     &:hover {
       border-bottom: #858585 solid 1px;
+    }
+    @media (width < 500px) {
+      font-size: 14px;
     }
   }
   a {
