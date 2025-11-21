@@ -11,7 +11,11 @@ const icon = (name) => skills.find((s) => s.label === name)?.src;
 const works = [
   {
     label: "架空のクラフトビールLP",
-    text: "兵庫、神戸のクラフトビールの架空LP。figmaでデザインを作成して、HTML、Sass、JavaScriptで作成。ファイル管理はGitHubで行いました。",
+    text: [
+      "兵庫、神戸のクラフトビールの架空LP。",
+      "figmaでデザインを作成して、HTML、Sass、JavaScriptで作成。",
+      "ファイル管理はGitHubで行いました。",
+    ],
     url: "https://cancion97.github.io/2025_10_fictional_LP/",
     src: LPpc,
     srcs: LPsp,
@@ -22,11 +26,15 @@ const works = [
       icon("Figma"),
       icon("Github"),
     ],
-    style: "13px solid #EEB449",
+    style: "10px solid #EEB449",
   },
   {
     label: "今日のラッキーポケモンアプリ",
-    text: "POKE APIを使った今日のラッキーポケモンを占うWEBアプリ。figmaでデザインを作成して、HTML、Sass、JavaScriptで作成。ファイル管理はGitHubで行いました。",
+    text: [
+      "POKE APIを使った今日のラッキーポケモンを占うWEBアプリ。",
+      "figmaでデザインを作成して、HTML、Sass、JavaScriptで作成。",
+      "ファイル管理はGitHubで行いました。",
+    ],
     url: "https://cancion97.github.io/pokeapi_luckypokemon/",
     src: pokepc,
     srcs: pokesp,
@@ -37,11 +45,15 @@ const works = [
       icon("Figma"),
       icon("Github"),
     ],
-    style: "13px solid #41A1E9",
+    style: "10px solid #41A1E9",
   },
   {
     label: "Reactで作ったブログサイト",
-    text: "授業で作ったブログサイトです。Figmaで作られたデザインをもとに、Reactを使って作成しました。ファイル管理はGithubで行いました。",
+    text: [
+      "授業で作ったブログサイトです。",
+      "Figmaで作られたデザインをもとに、Reactを使って作成しました。",
+      "ファイル管理はGithubで行いました。",
+    ],
     url: "https://cancion97.github.io/reactBlogSite/",
     src: blogpc,
     srcs: blogsp,
@@ -54,7 +66,7 @@ const works = [
       icon("Github"),
       icon("vite"),
     ],
-    style: "13px solid #E532D3",
+    style: "10px solid #E532D3",
   },
 ];
 

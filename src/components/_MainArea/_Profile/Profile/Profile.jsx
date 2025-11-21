@@ -14,7 +14,9 @@ export default function Profile() {
           <ProfileImage />
           <div className={styles.textBox}>
             <ProfileText title="NAME">
-              <p>みき　あさみ</p>
+              <p style={{ fontWeight: "500", fontSize: "1.1rem" }}>
+                三木　麻未（みき　あさみ）
+              </p>
             </ProfileText>
             <ProfileText title="SKILL">
               {skills.map((item, index) => (

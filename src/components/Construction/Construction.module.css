@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Neonderthaw&family=Noto+Sans+JP:wght@100..900&display=swap");
 
 .cbox {
+  margin-block-start: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  width: 300px;
 }
 
 .title {

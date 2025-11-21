@@ -40,7 +40,12 @@ export default function WorkItem() {
               </div>
             </div>
             <p style={{ borderLeft: item.style }} className={styles.text}>
-              {item.text}
+              {item.text.map((line, i) => (
+                <span key={i} className={styles.blockSpan}>
+                  {line}
+                </span>
+                // .blockSpanにCSSでdisplay: block;を指定してください。
+              ))}
             </p>
             <div className={styles.btnbox}>
               <Button btext="サイトにアクセス" icon={link} href={item.url} />
@@ -59,7 +64,12 @@ export default function WorkItem() {
                   {/* モーダルとして表示したい内容 */}
                   <div className={styles.modal}>
                     <Construction />
-                    <Button btext="閉じる" icon={close} onclick={closeModal} />
+                    <Button
+                      style={styles.btn}
+                      btext="閉じる"
+                      icon={close}
+                      onclick={closeModal}
+                    />
                   </div>
                 </div>
               </div>
