@@ -37,4 +37,7 @@
   height: 47px;
   margin-inline-end: 1.5rem;
   margin-block-end: 1.5rem;
+  @media (width<750px) {
+    height: 40px;
+  }
 }
