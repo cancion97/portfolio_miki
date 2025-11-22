@@ -95,7 +95,7 @@ export default function WorkItem() {
             </div>
           )}
 
-          <div className={styles.scshots}>
+          <div className={`${styles.scshots} reveal`}>
             <img
               className={styles.img}
               src={item.src}

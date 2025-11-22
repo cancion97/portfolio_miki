@@ -10,6 +10,7 @@
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
+    mix-blend-mode: color-burn;
     @media (width < 750px) {
       font-size: 90px;
     }
@@ -22,6 +23,7 @@
     font-optical-sizing: auto;
     font-weight: 600;
     left: 50%;
+    mix-blend-mode: color-burn;
     top: 50%;
     transform: translate(-50%, -50%);
   }
