@@ -2,6 +2,7 @@ import React from "react";
 import Titles from "../../Titles/Titles";
 import works from "../../../worksList";
 import WorkItem from "../WorkItem/WorkItem";
+import RevealList from "../../../RevealList";
 
 export default function Works() {
   return (

@@ -7,6 +7,7 @@ import clip from "../../../../assets/clip.png";
 import close from "../../../../assets/close.png";
 import { useState, useEffect } from "react";
 import Construction from "../../../Construction/Construction";
+import RevealList from "../../../RevealList";
 
 export default function WorkItem() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,14 +35,15 @@ export default function WorkItem() {
 
   return (
     <>
+      <RevealList />
       {works.map((item) => (
         <div key={item.label} className={styles.wbox}>
-          <div className={styles.box}>
+          <div className={`${styles.box} reveal`}>
             <div className={styles.clip}>
               <img src={clip} alt="クリップの写真" />
             </div>
 
-            <div className={styles.titlewrap}>
+            <div className={`${styles.titlewrap} reveal`}>
               <h3>{item.label}</h3>
 
               <div className={styles.imgbox}>
