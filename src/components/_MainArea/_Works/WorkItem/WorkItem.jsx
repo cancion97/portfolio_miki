@@ -46,7 +46,7 @@ export default function WorkItem() {
             <div className={`${styles.titlewrap} reveal`}>
               <h3>{item.label}</h3>
 
-              <div className={styles.imgbox}>
+              <div className={`${styles.imgbox} reveal`}>
                 {item.tool.map((icon, index) => (
                   <img
                     key={index}
@@ -58,9 +58,12 @@ export default function WorkItem() {
               </div>
             </div>
 
-            <p style={{ borderLeft: item.style }} className={styles.text}>
+            <p
+              style={{ borderLeft: item.style }}
+              className={`${styles.text} reveal`}
+            >
               {item.text.map((line, i) => (
-                <span key={i} className={styles.blockSpan}>
+                <span key={i} className={`${styles.blockSpan} reveal`}>
                   {line}
                 </span>
               ))}
