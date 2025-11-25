@@ -8,6 +8,7 @@
   font-family: "Neonderthaw", cursive;
   font-weight: 400;
   font-size: 50px;
+  text-align: start;
   font-style: normal;
   color: #333;
   @media (width < 750px) {

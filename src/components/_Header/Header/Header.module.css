@@ -4,6 +4,7 @@
   flex-direction: column;
   margin-block-end: 10rem;
   padding: 2rem;
+
   @media (width < 750px) {
     padding: 1rem;
   }
@@ -13,4 +14,8 @@
   margin-inline: auto;
   display: flex;
   flex-direction: column;
+
+  /* 🔥 中身を中央寄せにする */
+  align-items: center;
+  text-align: center;
 }
