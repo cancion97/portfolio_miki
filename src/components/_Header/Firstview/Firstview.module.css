@@ -34,18 +34,19 @@
 } */
 .wrapper {
   position: relative;
-  width: 400px; /* 好きなサイズに変更 */
-  height: 400px;
+  width: 450px; /* 好きなサイズに変更 */
+  height: 450px;
   transition: 3s;
+
   @media (width < 750px) {
-    width: 300px;
+    width: 350px;
   }
   @media (width < 500px) {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
   &:hover {
-    scale: 3;
+    scale: 2;
   }
 }
 
@@ -63,19 +64,23 @@
 /* 1枚目：0〜50%で表示、50〜100%で消える */
 .img1 {
   animation: blinkA 2s infinite;
+  /* transform-origin: center bottom; */
 }
 
 /* 2枚目：50%で切り替え（逆パターン） */
 .img2 {
   animation: blinkB 2s infinite;
+  /* transform-origin: center bottom; */
 }
 
 @keyframes blinkA {
   0% {
     opacity: 1;
+    rotate: 3deg;
   }
   49% {
     opacity: 1;
+    rotate: -1deg;
   }
   50% {
     opacity: 0;
@@ -94,8 +99,10 @@
   }
   50% {
     opacity: 1;
+    rotate: -1deg;
   }
   100% {
     opacity: 1;
+    rotate: 3deg;
   }
 }
