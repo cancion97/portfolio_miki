@@ -21,10 +21,35 @@
   font-optical-sizing: auto;
   font-weight: bold;
   font-size: 120px;
+
+  animation: blinkC 2s infinite;
   @media (width < 750px) {
     font-size: 70px;
   }
   @media (width < 500px) {
     font-size: 50px;
+  }
+}
+
+@keyframes blinkC {
+  0% {
+    opacity: 1;
+    color: #333;
+  }
+  49% {
+    opacity: 1;
+    color: #333;
+  }
+  50% {
+    background-image: radial-gradient(circle, #fbff07, #ee6fff, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  100% {
+    background-image: radial-gradient(circle, #fbff07, #eb7cff, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }

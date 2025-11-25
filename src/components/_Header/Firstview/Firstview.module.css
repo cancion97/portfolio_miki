@@ -80,7 +80,7 @@
   }
   49% {
     opacity: 1;
-    rotate: -1deg;
+    rotate: 1deg;
   }
   50% {
     opacity: 0;
@@ -99,7 +99,7 @@
   }
   50% {
     opacity: 1;
-    rotate: -1deg;
+    rotate: 1deg;
   }
   100% {
     opacity: 1;
