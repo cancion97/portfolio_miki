@@ -4,6 +4,8 @@ import pokepc from "./../assets/pokepc.png";
 import pokesp from "./../assets/poketb.png";
 import blogpc from "./../assets/blogpc.png";
 import blogsp from "./../assets/blogsp.png";
+import summersp from "./../assets/summersp.png";
+import summerpc from "./../assets/summerpc.png";
 import skills from "./skills";
 
 const icon = (name) => skills.find((s) => s.label === name)?.src;
@@ -67,6 +69,25 @@ const works = [
       icon("vite"),
     ],
     style: "10px solid #E532D3",
+  },
+  {
+    label: "日記サイト",
+    text: [
+      "訓練が始まって2ヶ月目で作った夏休みの課題で作った日記サイトです。",
+      "Figmaでデザインを作ってHTML、sass、少しだけJavaScriptで作りました",
+      "ファイル管理はGithubで行いました。",
+    ],
+    url: "https://cancion97.github.io/summer_vacation/",
+    src: summerpc,
+    srcs: summersp,
+    tool: [
+      icon("HTML"),
+      icon("sass"),
+      icon("JavaScript"),
+      icon("Figma"),
+      icon("Github"),
+    ],
+    style: "10px solid #19bbd4ff",
   },
 ];
 

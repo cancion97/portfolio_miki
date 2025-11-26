@@ -21,8 +21,8 @@
   letter-spacing: 1px;
   font-size: 24px;
   font-weight: bold;
-  color: rgb(49, 161, 202);
-  mix-blend-mode: color-burn;
+  color: rgb(193, 225, 235);
+  mix-blend-mode: multiply;
   margin: 0 3px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -38,7 +38,7 @@
     transform: translateX(0); /* 左端 */
   }
   50% {
-    transform: translateX(calc(100vw - 100%)); /* 右端 */
+    transform: translateX(calc(100vw - 102%)); /* 右端 */
   }
   100% {
     transform: translateX(0); /* 左端に戻る */
