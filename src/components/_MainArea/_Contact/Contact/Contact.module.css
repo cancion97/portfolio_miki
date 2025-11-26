@@ -2,7 +2,8 @@
   background: linear-gradient(70deg, #e0faf9, #fcf4fa);
   position: relative;
   margin-block-start: 4rem;
-  padding-block: 5rem;
+  padding-block-start: 5rem;
+  padding-block-end: 2rem;
 }
 
 .title {

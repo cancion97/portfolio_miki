@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Neonderthaw&family=Noto+Sans+JP:wght@100..900&display=swap");
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 120px;
+  user-select: none;
+  @media (width < 500px) {
+    flex-wrap: wrap;
+  }
+}
+
+.gooey {
+  filter: url("#gooey");
+  animation: bounceScreen 5s infinite;
+}
+
+.char {
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(49, 161, 202);
+  mix-blend-mode: color-burn;
+  margin: 0 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gooeyFilter {
+  width: 0;
+  height: 0;
+}
+
+@keyframes bounceScreen {
+  0% {
+    transform: translateX(0); /* 左端 */
+  }
+  50% {
+    transform: translateX(calc(100vw - 100%)); /* 右端 */
+  }
+  100% {
+    transform: translateX(0); /* 左端に戻る */
+  }
+}

@@ -5,6 +5,7 @@ import ContactImage from "../ContactImage/ContactImage";
 import ContactText from "../ContactText/ContactText";
 import Button from "../../../_commons/Button/Button";
 import mail from "../../../../assets/mail.png";
+import Title from "../../../Titlee/Title";
 
 export default function Contact() {
   return (
@@ -19,6 +20,7 @@ export default function Contact() {
           btext="mikiasm1207@gmail.com"
           icon={mail}
         />
+        <Title />
       </div>
     </>
   );
