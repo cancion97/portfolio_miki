@@ -73,8 +73,8 @@ const works = [
   {
     label: "日記サイト",
     text: [
-      "訓練が始まって2ヶ月目で作った夏休みの課題の日記サイトです。",
-      "Figmaでデザインを作ってHTML、sass、少しだけJavaScriptを使って作りました",
+      "訓練が始まって2ヶ月目に作った夏休みの課題の日記サイトです。",
+      "Figmaでデザインを作ってHTML、sass、少しだけJavaScriptを使って作りました。",
       "ファイル管理はGithubで行いました。",
     ],
     url: "https://cancion97.github.io/summer_vacation/",
