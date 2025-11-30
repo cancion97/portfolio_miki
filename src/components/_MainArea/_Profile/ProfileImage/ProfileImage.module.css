@@ -5,4 +5,22 @@
 .imgbox {
   flex-basis: 45%;
   min-width: 300px;
+  &:hover {
+    animation: animation 2s infinite;
+  }
+}
+
+@keyframes animation {
+  0% {
+    rotate: 0deg;
+  }
+  30% {
+    rotate: 3deg;
+  }
+  60% {
+    rotate: -3deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
 }
