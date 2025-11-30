@@ -6,6 +6,8 @@ import blogpc from "./../assets/blogpc.png";
 import blogsp from "./../assets/blogsp.png";
 import summersp from "./../assets/summersp.png";
 import summerpc from "./../assets/summerpc.png";
+import puresp from "./../assets/puresp.png";
+import purepc from "./../assets/purepc.png";
 import skills from "./skills";
 
 const icon = (name) => skills.find((s) => s.label === name)?.src;
@@ -88,6 +90,20 @@ const works = [
       icon("Github"),
     ],
     style: "10px solid #19bbd4ff",
+  },
+  {
+    label: "架空グミのLP",
+    text: [
+      "グループで分担して作成した架空グミのLPです。",
+      "Figmaでデザインを作ってHTML、sassを使って作成しました。",
+      "私はTasteのページを担当しました。",
+      "ファイル管理はGithubで行いました。",
+    ],
+    url: "https://studio02-sannomiya.github.io/pureMofy_solo/taste.html",
+    src: purepc,
+    srcs: puresp,
+    tool: [icon("HTML"), icon("sass"), icon("Figma"), icon("Github")],
+    style: "10px solid #e4b6c5ff",
   },
 ];
 
