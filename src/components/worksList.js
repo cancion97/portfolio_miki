@@ -1,5 +1,7 @@
 import LPpc from "./../assets/LPpc.png";
 import LPsp from "./../assets/LPsp.png";
+import LPpics from "./../assets/LPpics.png";
+import LPvideo from "./../assets/LPvideo.mp4";
 import pokepc from "./../assets/pokepc.png";
 import pokesp from "./../assets/poketb.png";
 import blogpc from "./../assets/blogpc.png";
@@ -31,6 +33,9 @@ const works = [
       icon("Github"),
     ],
     style: "10px solid #EEB449",
+    pics: LPpics,
+    video: LPvideo,
+    link: "/WorkDetail",
   },
   {
     label: "今日のラッキーポケモンアプリ",

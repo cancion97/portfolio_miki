@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Neonderthaw&family=Noto+Sans+JP:wght@100..900&display=swap");
+
+.text {
+  font-size: 24px;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 2px;
+  padding: 1rem;
+  border-bottom: 1px #333 solid;
+}
